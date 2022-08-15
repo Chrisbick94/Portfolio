@@ -22,6 +22,9 @@ section {
 footer {
     height: 500px;
     background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
 }
 
 nav {
@@ -33,7 +36,7 @@ ul {
     display: flex;
     list-style-type: none;
     width: 500px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 30px;
 }
 
@@ -55,6 +58,12 @@ p {
     margin: 0;
     font-weight: 300;
     font-size: 30px;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+
 }
 
 .hero-area {
@@ -110,6 +119,13 @@ p {
     padding: 80px;
 }
 
+.subsection-alt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
 .photo {
     width: 300px;
     border-radius: 150px;
@@ -119,3 +135,32 @@ p {
     display: flex;
     align-items: center;
 }
+
+.resume {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    background-color: #f15f2e;
+}
+
+ @media only screen and (max-width: 1000px) {
+    .resume-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
